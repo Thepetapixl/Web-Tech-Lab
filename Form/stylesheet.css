@@ -1,0 +1,42 @@
+body{
+    font-family: "Avenir Next";
+}
+
+.section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+form {
+    padding: 100px;
+}
+
+input, textarea{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom : 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+
+#mycheckbox{
+  width: 13px;
+  margin: 10px 5px 30px 0px;
+}
+
+.contact-submit{
+    background-color:#dee7ec;
+    color:#889eab;
+  }
+
+.special{
+  display: block;
+}
+
+.otherspecial{
+  display: block;
+}
