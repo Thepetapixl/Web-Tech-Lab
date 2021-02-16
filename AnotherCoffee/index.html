@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista Cafe</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40a990fb5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="magnific-popup.css">
+</head>
+<body>
+    <header class="header">
+        <div class="paneer">
+            <h1 class="title">Barista Cafe</h1>
+            <h1 class="title1">'Coffee: The gasoline of life'</h1>
+            <a href="#" class="hero-button pulsate">Welcome to Cafe</a>
+        </div>
+    </header>
+
+    <p style="text-align:center">Please select your menu:</p>
+
+<div id="Coffee" class="tabcontent">
+  <h1>Coffee</h1>
+  <p>Live life today like there is no coffee tomorrow.</p>
+</div>
+
+<div id="Beverages" class="tabcontent">
+  <h1>Beverages</h1>
+  <p>A little bit of laughter and an occasional adult beverage never hurt nobody.</p> 
+</div>
+
+<div id="Cookies" class="tabcontent">
+  <h1>Cookies</h1>
+  <p>A balanced diet is a cookie in each hand</p>
+</div>
+
+<div id="Pastry" class="tabcontent">
+  <h1>Pastry</h1>
+  <p>A pastry usually tastes better if it looks nice</p>
+</div>
+
+<button class="tablink" onclick = "openCity('Coffee')">Coffee</button>
+<button class="tablink" onclick = "openCity('Beverages')">Beverages</button>
+<button class="tablink" onclick="openCity('Cookies')">Cookies</button>
+<button class="tablink" onclick="openCity('Pastry')">Pastry</button>
+
+<script>
+function openCity(cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+
+</html>
