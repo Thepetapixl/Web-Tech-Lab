@@ -17,10 +17,10 @@
         <h3 class="section-title">Contact Us</h3>
         <p>
             <label class="special">Name</label>
-            <input type="text" required>
+            <input type="text" id = "FullName" required>
 
             <label class="special">Email ID</label>
-            <input type="email" required>
+            <input type="email" id = "Email" required>
 
             <label class="special">Phone number</label>
             <input type="tel" required>
@@ -30,9 +30,9 @@
 
             <label class="otherspecial">
 
-                <input type="radio" name="Gender" id="myradio" value="male">Male &nbsp; 
-                <input type="radio" name="Gender" id="myradio" value="female">Female &nbsp; 
-                <input type="radio" name="Gender" id="myradio" value="No">Prefer not to say &nbsp;
+                <input type="radio" name="Gender" id="myradio1" value="Male">Male &nbsp; 
+                <input type="radio" name="Gender" id="myradio2" value="female">Female &nbsp; 
+                <input type="radio" name="Gender" id="myradio3" value="No">Prefer not to say &nbsp;
             
             </label>
 
@@ -43,7 +43,7 @@
 
 
             <label class="special">All Fields are required *</label>
-            <input class="contact-submit" type="submit" value="Send">
+            <input class="contact-submit" type="submit" value="Send" onclick="getData()">
         </p>
     </form>
     </div>
