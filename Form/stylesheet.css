@@ -47,3 +47,16 @@ input, textarea{
 .otherspecial{
   display: block;
 }
+
+.back{
+  text-align: center;
+}
+
+.section-title-two{
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+}

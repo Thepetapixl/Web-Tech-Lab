@@ -5,14 +5,30 @@
     <link rel="stylesheet" href="stylesheet.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <title>Contact Form</title>
 </head>
 <body>
 
     <div class = "contact-form">
 
-        <h3 class="section-title">Thank you for fill out this form!</h3>        
+        <h3 class="section-title-two">Thank you for filling out this form</h3>
+        <script>
+            function getParams(){
+                var idx = document.URL.indexOf('?');
+                var params = new Array();
+                if (idx != -1) {
+                    var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                    for (var i=0; i<pairs.length; i++){
+                        nameVal = pairs[i].split('=');
+                        params[nameVal[0]] = nameVal[1];
+                    }
+                }
+                return params;
+            }
+            params = getParams();
+            FullName = unescape(params["FullName"]).replace('+', ' ');
+            document.write("<h2 class = \"back\">We will get back to you " + FullName + "! </h3><br>");
+        </script>        
     </div>
     
 </body>
