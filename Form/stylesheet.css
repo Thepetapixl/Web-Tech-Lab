@@ -1,9 +1,13 @@
+html{
+  background-color: #8fdbc5;
+}
+
 body{
     font-family: "Avenir Next";
 }
 
 .section-title {
-    border-bottom: 2px solid #dee7ec;
+    border-bottom: 2px solid black;
     font-size: 28px;
     padding-bottom: 15px;
     margin-bottom: 50px;
@@ -36,8 +40,8 @@ input, textarea{
 }
 
 .contact-submit{
-    background-color:#dee7ec;
-    color:#889eab;
+    background-color: #f9f8e7;
+    color:black;
   }
 
 .special{
