@@ -33,6 +33,11 @@ input, textarea{
   margin: 10px 5px 30px 0px;
 }
 
+#updates{
+  width: 13px;
+  margin: 10px 5px 30px 0px;
+}
+
 #myradio1, #myradio2, #myradio3{
   width: 13px;
   height: 13px;
