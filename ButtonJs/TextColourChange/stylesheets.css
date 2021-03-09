@@ -1,0 +1,26 @@
+#change{
+    font-family: "Avenir Next";
+    text-align: center;
+}
+
+#buttonChange{ 
+    font-family: "Avenir Next";
+    text-align: center;
+    background-color: white;
+    border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 40%;
+}
+
+#testBox{
+    width: 400px;
+    height: 400px;
+    border-color: black;
+    border: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
