@@ -1,0 +1,32 @@
+html{
+    font-family: Avenir Next;
+}
+
+.form{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+input{
+    width: 400px;
+    margin: 10px auto 30px auto;
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+    resize: none;
+    border-radius: 20px;
+}
+
+button{
+    background-color: #228FCF;
+    color:black;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom : 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+    border-radius: 20px;
+}
