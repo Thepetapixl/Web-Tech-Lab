@@ -1,7 +1,7 @@
 function buttonColorChange(){
-    document.getElementById("myHead").style.color = "green";
+    var Newcolor = document.getElementById("myColor").value;
+    console.log(Newcolor);
+    document.getElementById("container").style.backgroundColor = Newcolor;
 }
 
-function ShowBackgroundImage() {
-    document.getElementById("background-image").style.backgroundImage = "URL('test.jpg')";
-}
+
