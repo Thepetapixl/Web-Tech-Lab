@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style = "font-family: Avenir Next;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+</head>
+<script>
+    
+function palindrome() {
+  var str = document.getElementById('my_String').value;
+  if (str != "") {
+    str = str.toLowerCase().replace(/[\W_]/g, "");
+    for (var i = 0, len = str.length - 1; i < len / 2; i++) {
+      if (str[i] !== str[len - i]) {
+        document.getElementById('Change_Me').innerHTML = "False, the given string " + str + " is not a pallindrome";
+        return false;
+      }
+    }
+    document.getElementById('Change_Me').innerHTML = "True, the given string " + str + " is a pallindrome";
+    return true;
+    }
+    else {
+        document.getElementById('Change_Me').innerHTML = "Please Enter a String";
+    }   
+  }
+
+</script>
+<style>
+
+    #container {
+    text-align: center; font-size: 20px; padding-bottom: 15px; margin-bottom: 50px;
+  }
+    
+
+    #EnterString {
+        margin-bottom: 50px;
+    }
+
+    #my_String {
+        display: block;
+        width: 300px;
+        font-size: 20px;
+        border: 1px solid #dee7ec;
+        margin: 10px auto 10px auto;
+    }
+
+    button {
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    #Change_Me {
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+    <div id = "container">
+
+        <label id="EnterString">Enter the String:</label>
+        <input id="my_String" type="text">
+
+        <button onclick="palindrome()">Check</button>
+
+        <div id="Change_Me"></div>
+    </div>
+</body>
+</html>
