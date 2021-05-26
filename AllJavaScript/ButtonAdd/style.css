@@ -1,10 +1,10 @@
-#change{
-    font-family: "Avenir Next";
+body{
+    font-family: 'Avenir Next';
+    background-color: white;
     text-align: center;
 }
 
-#buttonChange{ 
-    font-family: "Avenir Next";
+#button{
     text-align: center;
     background-color: #228FCF;
     margin: 50px auto 0px auto;
@@ -13,5 +13,6 @@
     border: 1px solid #dee7ec;
     border-radius: 20px;
     padding: 20px;
-
 }
+
+

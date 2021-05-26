@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Bootstrap Pop Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mouse").mouseover(function () {
+                $("#insertModal").modal();
+            })
+        })
+    </script>
+    <style>
+        .model-body{
+            font-family: cursive;
+        }
+        h4{
+            float: right;
+        }
+ 
+    </style>
+</head>
+ 
+<body>
+    <br><br>
+    <ul>
+        <li id="mouse">Hover Over Me</li>
+    </ul>
+    <div id="insertModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">Enter Details
+                    <a id="btn1" href="#" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                    
+                </div> 
+                <div class="modal-body">
+                    PRN: <input type="text" id="txtId" /><br>
+                    Year: <input type="text" id="txtName" /><br>
+                </div> 
+                <div class="modal-footer">
+                    <input type="button" class="close" data-dismiss="modal" value="Close"></input>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</body>
+</html>
+ 

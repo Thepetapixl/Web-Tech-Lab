@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Student's Registration</title>
+</head>
+<body>
+<form action="Practical.php" method="post">
+<table width="600" border="5" align="center">
+<tr>
+<td> Student's Name </td>
+<td> <input type="text" name="name"> </td>
+</tr>
+<tr>
+<td> School Name </td>
+<td><input type="text" name="school"> </td></tr>
+<tr>
+<td> Roll No: </td>
+<td> <input type="text" name="roll"> </td>
+</tr>
+<tr>
+<td>Result: </td>
+<td><input type="text" name="result"> </td>
+</tr>
+<tr>
+<td colspan="5" align="center"> <input type="Submit"
+name="Submit" value="Submit Now"> </td>
+</tr>
+</table>
+<table width="600" border="3" align="center">
+<tr>
+<th> Serial No </th>
+<th> Student Name</th>
+<th> School Name</th>
+<th> Roll No </th>
+<th> Result</th>
+<th>Delete</th>
+<th>Edit</th>
+</tr>
+<?php
+$con=mysqli_connect("localhost","root","","school");
+$yuo=$con->query("select * from details");
+//echo "testing";
+while($row=mysqli_fetch_array($yuo)){
+$s_id=$row['id'];
+$stu_name=$row['Name'];
+$s_name=$row['School_name'];
+$s_roll=$row['Roll-No'];
+$s_result=$row['Result'];
+?><tr>
+<td><?php echo $s_id;?></td>
+<td><?php echo $stu_name;?></td>
+<td><?php echo $s_name;?></td>
+<td><?php echo $s_roll;?></td>
+<td><?php echo $s_result;?></td>
+<td>Delete</td>
+<td>Edit</td>
+</tr>
+<?php } ?>
+</table>
+</form>
+</body>
+</html>
+<?php
+$con=mysqli_connect("localhost","root","","school");
+if (!$con) {
+die("Connection failed: "
+. mysqli_connect_error());
+}
+if(isset($_POST['Submit'])) {
+$name=$_POST['name'];
+$school=$_POST['school'];
+$roll=$_POST['roll'];
+$result=$_POST['result'];
+$sql = "INSERT INTO
+details(`id`,`Name`,`School_name`,`Roll-No`,`Result`) VALUES('
+','$name','$school','$roll','$result')";
+if (mysqli_query($con,$sql))
+{
+echo " Data Inserted Successfully";
+}
+else {
+echo "Error: " . $sql . "<br>" . mysqli_error($con);
+}
+}mysqli_close($con);
+?>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <title>Animations</title>
+    </head>
+    <style>
+        #text {
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: black;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid black;
+            box-shadow: 4px 4px 4px 4px red;
+            text-align: center;
+            font-family: Avenir Next;
+            color: white;
+            border-radius: 5px;
+        }
+        p{
+            font-size: 40px;
+            font-family: Avenir Next;
+        }
+
+        #btn{
+            background-color: white;
+            color:black;
+            width: 400px;
+            margin-top: 10px 0px 30px 0px;
+            padding: 20px;
+            font-size: 18px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+    $("#btn").click(function () {
+        var div = $("div");
+        div.animate({
+            height: '200px',
+            width: '300px',
+            opacity: '0.5',
+            fontSize: '40px'
+        }, 300);
+        div.animate({
+            height: '200px',
+            width: '300px',
+            opacity: '0.4',
+            fontSize: '20px'
+        }, 400);
+        $("div").hide(300).delay(300).show(1000);
+    })
+})
+    </script>
+</head>
+<body>
+    <center>
+        <p>Animation Using JQuery Library</p>
+        <button id="btn">Animate</button>
+        <br><br><br>
+        <div id="text">Apurv Vidhate</div>
+    </center>
+</body>
+</html>
